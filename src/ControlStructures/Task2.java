@@ -1,5 +1,7 @@
+package ControlStructures;
+
 public class Task2 {
-    public void task2(int num) {
+    public static void task2(int num) {
 
         if (num == 1) {
             System.out.println("It's January");
@@ -26,5 +28,6 @@ public class Task2 {
         } else if (num == 12) {
             System.out.println("It's December");
         } else System.out.println("You wrote down an incorrect number. Try again :)");
+
     }
 }

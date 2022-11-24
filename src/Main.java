@@ -1,12 +1,20 @@
+import ControlStructures.*;
+import Cycles.Task6;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Task2 t2 = new Task2();
-        Task1 t1 = new Task1();
 
-        int answer = 1;
+        Task1 t1 = new Task1();
+        Task2 t2 = new Task2();
+        Task3 t3 = new Task3();
+        Task4 t4 = new Task4();
+        Task5 t5 = new Task5();
+        Task6 t6 = new Task6();
+
+        int answer = 0;
         int num;
 
         while (answer != 15) {
@@ -26,12 +34,14 @@ public class Main {
                 case 1:
                     System.out.println("Task 1.1\nEnter a number from 1 to 12: ");
                     num = input.nextInt();
+
                     t1.task1(num);
                     break;
 
                 case 2:
                     System.out.println("Task 1.2\nEnter a number from 1 to 12: ");
                     num = input.nextInt();
+
                     t2.task2(num);
                     break;
 
@@ -39,84 +49,61 @@ public class Main {
                     System.out.print("Task 1.3\nEnter a number: ");
                     num = input.nextInt();
 
-                    if (num % 2 == 0) {
-                        System.out.println(num + " - even");
-                    } else System.out.println(num + " - uneven");
+                    t3.task3(num);
                     break;
 
                 case 4:
                     System.out.print("Task 1.4\nEnter a temperature: ");
                     num = input.nextInt();
-                    if (num > -5) {
-                        System.out.println("warm");
-                    } else if (num <= -5 && num > -20) {
-                        System.out.println("norm");
-                    } else if (num <= -20) {
-                        System.out.println("freeze");
-                    }
+
+                    t4.task4(num);
                     break;
+
                 case 5:
                     System.out.print("Task 1.5\nEnter a number (1-7) and get a color: ");
                     num = input.nextInt();
-                    switch (num) {
-                        case 1:
-                            System.out.println("red");
-                            break;
-                        case 2:
-                            System.out.println("orange");
-                            break;
-                        case 3:
-                            System.out.println("yellow");
-                            break;
-                        case 4:
-                            System.out.println("green");
-                            break;
-                        case 5:
-                            System.out.println("blue");
-                            break;
-                        case 6:
-                            System.out.println("dark blue");
-                            break;
-                        case 7:
-                            System.out.println("purple");
-                            break;
-                        default:
-                            System.out.println("sorry! you give me an incorrect number :( Try again");
-                    }
+
+                    t5.task5(num);
                     break;
+
                 case 6:
                     System.out.println("Task 2.1");
-                    for (int i = 1; i <= 99; i++) {
-                        int a = i % 2;
-                        if (a == 1) {
-                            System.out.println(i);
-                        }
-                    }
+
+                    t6.task6();
                     break;
+
                 case 7:
                     System.out.println("Task 2.2");
                     break;
+
                 case 8:
                     System.out.println("Task 2.3");
                     break;
+
                 case 9:
                     System.out.println("Task 2.4");
                     break;
+
                 case 10:
                     System.out.println("Task 2.5");
                     break;
+
                 case 11:
                     System.out.println("Task 2.6");
                     break;
+
                 case 12:
                     System.out.println("Task 3.1");
                     break;
+
                 case 13:
                     System.out.println("Task 3.2");
                     break;
+
                 case 14:
                     System.out.println("Task 3.3");
                     break;
+
                 case 15:
                     System.out.println("bye!");
                     break;

@@ -1,5 +1,7 @@
+package ControlStructures;
+
 public class Task1 {
-    public void task1(int num) {
+    public static void task1(int num) {
 
         switch (num) {
             case 1:
@@ -39,7 +41,6 @@ public class Task1 {
                 break;
             default:
                 System.out.println("You wrote down an incorrect number. Try again :)");
-                break;
         }
     }
 }
