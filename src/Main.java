@@ -108,7 +108,7 @@ public class Main {
                     System.out.print("Task 1.4\nEnter a temperature: ");
                     num = input.nextInt();
                     if (num > -5) {
-                        System.out.println("Warm");
+                        System.out.println("warm");
                     } else if (num <= -5 && num > -20) {
                         System.out.println("norm");
                     } else if (num <= -20) {
@@ -116,7 +116,33 @@ public class Main {
                     }
                     break;
                 case 5:
-                    System.out.println("Task 1.5");
+                    System.out.print("Task 1.5\nEnter a number (1-7) and get a color: ");
+                    num = input.nextInt();
+                    switch (num) {
+                        case 1:
+                            System.out.println("red");
+                            break;
+                        case 2:
+                            System.out.println("orange");
+                            break;
+                        case 3:
+                            System.out.println("yellow");
+                            break;
+                        case 4:
+                            System.out.println("green");
+                            break;
+                        case 5:
+                            System.out.println("blue");
+                            break;
+                        case 6:
+                            System.out.println("dak blue");
+                            break;
+                        case 7:
+                            System.out.println("purple");
+                            break;
+                        default:
+                            System.out.println("sorry! you give me an incorrect number :( Try again");
+                    }
                     break;
                 case 6:
                     System.out.println("Task 2.1");
