@@ -23,7 +23,7 @@ public class Main {
                 case 1:
                     System.out.print("Task 1.1\n Enter a number from 1 to 12: ");
                     num = input.nextInt();
-                    switch (num){
+                    switch (num) {
                         case 1:
                             System.out.println("It's January");
                             break;
@@ -98,12 +98,22 @@ public class Main {
                 case 3:
                     System.out.print("Task 1.3\nEnter a number: ");
                     num = input.nextInt();
-                    if(num % 2 == 0){
+
+                    if (num % 2 == 0) {
                         System.out.println(num + " - even");
                     } else System.out.println(num + " - uneven");
                     break;
+
                 case 4:
-                    System.out.println("Task 1.4");
+                    System.out.print("Task 1.4\nEnter a temperature: ");
+                    num = input.nextInt();
+                    if (num > -5) {
+                        System.out.println("Warm");
+                    } else if (num <= -5 && num > -20) {
+                        System.out.println("norm");
+                    } else if (num <= -20) {
+                        System.out.println("freeze");
+                    }
                     break;
                 case 5:
                     System.out.println("Task 1.5");
