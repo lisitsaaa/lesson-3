@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        Task2 t2 = new Task2();
+
         int answer = 1;
         int num;
 
@@ -66,33 +68,7 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.print("Task 1.2\nEnter a number from 1 to 12: ");
-                    num = input.nextInt();
-                    if (num == 1) {
-                        System.out.println("It's January");
-                    } else if (num == 2) {
-                        System.out.println("It's February");
-                    } else if (num == 3) {
-                        System.out.println("It's March");
-                    } else if (num == 4) {
-                        System.out.println("It's April");
-                    } else if (num == 5) {
-                        System.out.println("It's May");
-                    } else if (num == 6) {
-                        System.out.println("It's June");
-                    } else if (num == 7) {
-                        System.out.println("It's July");
-                    } else if (num == 8) {
-                        System.out.println("It's August");
-                    } else if (num == 9) {
-                        System.out.println("It's September");
-                    } else if (num == 10) {
-                        System.out.println("It's October");
-                    } else if (num == 11) {
-                        System.out.println("It's November");
-                    } else if (num == 12) {
-                        System.out.println("It's December");
-                    } else System.out.println("You wrote down an incorrect number. Try again :)");
+                    t2.task2();
                     break;
 
                 case 3:
@@ -135,7 +111,7 @@ public class Main {
                             System.out.println("blue");
                             break;
                         case 6:
-                            System.out.println("dak blue");
+                            System.out.println("dark blue");
                             break;
                         case 7:
                             System.out.println("purple");
@@ -146,6 +122,12 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Task 2.1");
+                    for (int i = 1; i <= 99; i++) {
+                        int a = i % 2;
+                        if (a == 1) {
+                            System.out.println(i);
+                        }
+                    }
                     break;
                 case 7:
                     System.out.println("Task 2.2");
