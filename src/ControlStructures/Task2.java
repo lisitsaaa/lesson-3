@@ -1,7 +1,7 @@
 package ControlStructures;
 
 public class Task2 {
-    public static void task2(int num) {
+    public void taskAboutMonthWithIfElse(int num) {
 
         if (num == 1) {
             System.out.println("It's January");

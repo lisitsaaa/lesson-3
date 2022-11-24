@@ -1,5 +1,7 @@
 import ControlStructures.*;
 import Cycles.Task6;
+import Cycles.Task7;
+import Cycles.Task8;
 
 import java.util.Scanner;
 
@@ -13,6 +15,8 @@ public class Main {
         Task4 t4 = new Task4();
         Task5 t5 = new Task5();
         Task6 t6 = new Task6();
+        Task7 t7 = new Task7();
+        Task8 t8 = new Task8();
 
         int answer = 0;
         int num;
@@ -31,82 +35,52 @@ public class Main {
             answer = input.nextInt();
 
             switch (answer) {
-                case 1:
+                case 1 -> {
                     System.out.println("Task 1.1\nEnter a number from 1 to 12: ");
                     num = input.nextInt();
-
-                    t1.task1(num);
-                    break;
-
-                case 2:
+                    t1.taskAboutMonthWithSwitchCase(num);
+                }
+                case 2 -> {
                     System.out.println("Task 1.2\nEnter a number from 1 to 12: ");
                     num = input.nextInt();
-
-                    t2.task2(num);
-                    break;
-
-                case 3:
+                    t2.taskAboutMonthWithIfElse(num);
+                }
+                case 3 -> {
                     System.out.print("Task 1.3\nEnter a number: ");
                     num = input.nextInt();
-
-                    t3.task3(num);
-                    break;
-
-                case 4:
+                    t3.taskAboutEvenAndUnevenNumbers(num);
+                }
+                case 4 -> {
                     System.out.print("Task 1.4\nEnter a temperature: ");
                     num = input.nextInt();
-
-                    t4.task4(num);
-                    break;
-
-                case 5:
+                    t4.taskAboutTemperature(num);
+                }
+                case 5 -> {
                     System.out.print("Task 1.5\nEnter a number (1-7) and get a color: ");
                     num = input.nextInt();
-
-                    t5.task5(num);
-                    break;
-
-                case 6:
+                    t5.taskAboutRainbow(num);
+                }
+                case 6 -> {
                     System.out.println("Task 2.1");
-
-                    t6.task6();
-                    break;
-
-                case 7:
+                    t6.taskAboutUnevenNumbers();
+                }
+                case 7 -> {
                     System.out.println("Task 2.2");
-                    break;
+                    t7.taskAboutDecrement();
+                }
+                case 8 -> {
+                    System.out.println("Task 2.3\nEnter a number: ");
+                    num = input.nextInt();
 
-                case 8:
-                    System.out.println("Task 2.3");
-                    break;
-
-                case 9:
-                    System.out.println("Task 2.4");
-                    break;
-
-                case 10:
-                    System.out.println("Task 2.5");
-                    break;
-
-                case 11:
-                    System.out.println("Task 2.6");
-                    break;
-
-                case 12:
-                    System.out.println("Task 3.1");
-                    break;
-
-                case 13:
-                    System.out.println("Task 3.2");
-                    break;
-
-                case 14:
-                    System.out.println("Task 3.3");
-                    break;
-
-                case 15:
-                    System.out.println("bye!");
-                    break;
+                    t8.taskSum(num);
+                }
+                case 9 -> System.out.println("Task 2.4");
+                case 10 -> System.out.println("Task 2.5");
+                case 11 -> System.out.println("Task 2.6");
+                case 12 -> System.out.println("Task 3.1");
+                case 13 -> System.out.println("Task 3.2");
+                case 14 -> System.out.println("Task 3.3");
+                case 15 -> System.out.println("bye!");
             }
             System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
 

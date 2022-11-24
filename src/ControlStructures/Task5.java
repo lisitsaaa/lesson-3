@@ -2,7 +2,7 @@ package ControlStructures;
 
 public class Task5 {
 
-    public static void task5(int num){
+    public void taskAboutRainbow(int num){
         switch (num) {
             case 1:
                 System.out.println("red");

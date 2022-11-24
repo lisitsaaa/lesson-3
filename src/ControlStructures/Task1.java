@@ -1,7 +1,7 @@
 package ControlStructures;
 
 public class Task1 {
-    public static void task1(int num) {
+    public void taskAboutMonthWithSwitchCase(int num) {
 
         switch (num) {
             case 1:
