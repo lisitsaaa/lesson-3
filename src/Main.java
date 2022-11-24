@@ -7,15 +7,16 @@ public class Main {
         int num;
 
         while (answer != 15) {
-            System.out.print("CONTROL STRUCTURES\t\tCYCLES\t\t\t\tADDITIONAL TASKS" +
-                    "\n1 - task 1.1\t\t\t6 - task 2.1\t\t12 - task 3.1" +
-                    "\n2 - task 1.2\t\t\t7 - task 2.2\t\t13 - task 3.2" +
-                    "\n3 - task 1.3\t\t\t8 - task 2.3\t\t14 - task 3.3" +
-                    "\n4 - task 1.4\t\t\t9 - task 2.4" +
-                    "\n5 - task 1.5\t\t\t10 - task 2.5" +
-                    "\n\t\t\t\t\t\t11 - task 2.6" +
-                    "\n------------------------------------------------>15 - EXIT" +
-                    "\nYour choice: ");
+            System.out.print("""
+                    CONTROL STRUCTURES\t\tCYCLES\t\t\t\tADDITIONAL TASKS
+                    1 - task 1.1\t\t\t6 - task 2.1\t\t12 - task 3.1
+                    2 - task 1.2\t\t\t7 - task 2.2\t\t13 - task 3.2
+                    3 - task 1.3\t\t\t8 - task 2.3\t\t14 - task 3.3
+                    4 - task 1.4\t\t\t9 - task 2.4
+                    5 - task 1.5\t\t\t10 - task 2.5
+                    \t\t\t\t\t\t11 - task 2.6
+                    ------------------------------------------------>15 - EXIT
+                    Your choice:\s""");
             answer = input.nextInt();
 
             switch (answer) {
@@ -95,7 +96,11 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("Task 1.3");
+                    System.out.print("Task 1.3\nEnter a number: ");
+                    num = input.nextInt();
+                    if(num % 2 == 0){
+                        System.out.println(num + " - even");
+                    } else System.out.println(num + " - uneven");
                     break;
                 case 4:
                     System.out.println("Task 1.4");
