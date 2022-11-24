@@ -1,12 +1,5 @@
-import java.util.Scanner;
-
 public class Task2 {
-    public void task2() {
-        Scanner input = new Scanner(System.in);
-        int num;
-
-        System.out.print("Task 1.2\nEnter a number from 1 to 12: ");
-        num = input.nextInt();
+    public void task2(int num) {
 
         if (num == 1) {
             System.out.println("It's January");
