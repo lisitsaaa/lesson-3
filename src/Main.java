@@ -1,7 +1,5 @@
 import ControlStructures.*;
-import Cycles.Task6;
-import Cycles.Task7;
-import Cycles.Task8;
+import Cycles.*;
 
 import java.util.Scanner;
 
@@ -17,6 +15,9 @@ public class Main {
         Task6 t6 = new Task6();
         Task7 t7 = new Task7();
         Task8 t8 = new Task8();
+        Task9 t9 = new Task9();
+        Task10 t10 = new Task10();
+        Task11 t11 = new Task11();
 
         int answer = 0;
         int num;
@@ -69,14 +70,22 @@ public class Main {
                     t7.taskAboutDecrement();
                 }
                 case 8 -> {
-                    System.out.println("Task 2.3\nEnter a number: ");
+                    System.out.print("Task 2.3\nEnter a number: ");
                     num = input.nextInt();
-
                     t8.taskSum(num);
                 }
-                case 9 -> System.out.println("Task 2.4");
-                case 10 -> System.out.println("Task 2.5");
-                case 11 -> System.out.println("Task 2.6");
+                case 9 -> {
+                    System.out.println("Task 2.4");
+                    t9.taskAboutSevenMultiplyNumbers();
+                }
+                case 10 -> {
+                    System.out.println("Task 2.5");
+                    t10.taskAboutMinusSeven();
+                }
+                case 11 -> {
+                    System.out.println("Task 2.6");
+                    t11.task2_6();
+                }
                 case 12 -> System.out.println("Task 3.1");
                 case 13 -> System.out.println("Task 3.2");
                 case 14 -> System.out.println("Task 3.3");
