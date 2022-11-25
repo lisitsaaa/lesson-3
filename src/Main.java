@@ -99,7 +99,14 @@ public class Main {
                     t12.Fibonachchi();
                 }
                 case 13 -> {
-                    System.out.println("Task 3.2");
+                    System.out.print("Task 3.2\nEnter months: ");
+                    num = input.nextInt();
+
+                    float sum;
+                    System.out.print("Enter sum: ");
+                    sum = input.nextFloat();
+
+                    t13.taskAboutMonthAndSum(num, sum);
 
                 }
                 case 14 -> System.out.println("Task 3.3");
