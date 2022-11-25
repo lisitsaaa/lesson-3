@@ -43,12 +43,12 @@ public class Main {
 
             switch (answer) {
                 case 1 -> {
-                    System.out.println("Task 1.1\nEnter a number from 1 to 12: ");
+                    System.out.print("Task 1.1\nEnter a number from 1 to 12: ");
                     num = input.nextInt();
                     t1.taskAboutMonthWithSwitchCase(num);
                 }
                 case 2 -> {
-                    System.out.println("Task 1.2\nEnter a number from 1 to 12: ");
+                    System.out.print("Task 1.2\nEnter a number from 1 to 12: ");
                     num = input.nextInt();
                     t2.taskAboutMonthWithIfElse(num);
                 }

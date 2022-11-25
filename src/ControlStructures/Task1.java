@@ -4,20 +4,11 @@ public class Task1 {
     public void taskAboutMonthWithSwitchCase(int num) {
 
         switch (num) {
-            case 1:
-                System.out.println("Winter");
-                break;
-            case 2:
-                System.out.println("Spring");
-                break;
-            case 3:
-                System.out.println("Summer");
-                break;
-            case 4:
-                System.out.println("Fall");
-                break;
-            default:
-                System.out.println("You wrote down an incorrect number. Try again :)");
+            case 1, 2, 12 -> System.out.println("Winter");
+            case 3, 4, 5 -> System.out.println("Spring");
+            case 6, 7, 8 -> System.out.println("Summer");
+            case 9, 10, 11 -> System.out.println("Fall");
+            default -> System.out.println("You wrote down an incorrect number. Try again :)");
         }
     }
 }
