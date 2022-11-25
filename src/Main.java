@@ -96,7 +96,10 @@ public class Main {
                     System.out.println("Task 3.1");
                     t12.Fibonachchi();
                 }
-                case 13 -> System.out.println("Task 3.2");
+                case 13 -> {
+                    System.out.println("Task 3.2");
+
+                }
                 case 14 -> System.out.println("Task 3.3");
 
                 case 15 -> System.out.println("bye!");

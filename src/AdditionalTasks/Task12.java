@@ -2,14 +2,15 @@ package AdditionalTasks;
 
 public class Task12 {
     public void Fibonachchi() {
-        int i = 1;
-        int j = 0;
+        int a = 1;
+        int b = 0;
 
-        while (i <= 89) {
-            System.out.print(i + "\t");
-            i = i + j;
-            j = i - j;
+        for (int i = 1; i <= 11; i++) {
+            System.out.print(a + "\t");
+            a = a + b;
+            b = a - b;
         }
+
         System.out.println();
     }
 }
