@@ -1,3 +1,6 @@
+import AdditionalTasks.Task12;
+import AdditionalTasks.Task13;
+import AdditionalTasks.Task14;
 import ControlStructures.*;
 import Cycles.*;
 
@@ -18,6 +21,9 @@ public class Main {
         Task9 t9 = new Task9();
         Task10 t10 = new Task10();
         Task11 t11 = new Task11();
+        Task12 t12 = new Task12();
+        Task13 t13 = new Task13();
+        Task14 t14 = new Task14();
 
         int answer = 0;
         int num;
@@ -86,7 +92,10 @@ public class Main {
                     System.out.println("Task 2.6");
                     t11.task2_6();
                 }
-                case 12 -> System.out.println("Task 3.1");
+                case 12 -> {
+                    System.out.println("Task 3.1");
+                    t12.Fibonachchi();
+                }
                 case 13 -> System.out.println("Task 3.2");
                 case 14 -> System.out.println("Task 3.3");
 
