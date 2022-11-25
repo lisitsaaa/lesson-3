@@ -8,6 +8,6 @@ public class Task8 {
             sum += num;
             num--;
         }
-        System.out.println(" = " + sum);
+        System.out.println(sum);
     }
 }

@@ -76,9 +76,11 @@ public class Main {
                     t7.taskAboutDecrement();
                 }
                 case 8 -> {
-                    System.out.print("Task 2.3\nEnter a number: ");
+                    System.out.print("Task 2.3\nEnter a positive number: ");
                     num = input.nextInt();
-                    t8.taskSum(num);
+                    if (num >= 0) {
+                        t8.taskSum(num);
+                    } else System.out.println("Your number is negative. Try again :)");
                 }
                 case 9 -> {
                     System.out.println("Task 2.4");
