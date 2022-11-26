@@ -109,7 +109,10 @@ public class Main {
                     t13.taskAboutMonthAndSum(num, sum);
 
                 }
-                case 14 -> System.out.println("Task 3.3");
+                case 14 -> {
+                    System.out.println("Task 3.3");
+                    t14.multiplicationTable();
+                }
 
                 case 15 -> System.out.println("bye!");
             }
