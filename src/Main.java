@@ -114,7 +114,7 @@ public class Main {
                     t14.multiplicationTable();
                 }
 
-                case 15 -> System.out.println("bye!");
+                case 15 -> System.out.println("bye!!");
             }
             System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
 
