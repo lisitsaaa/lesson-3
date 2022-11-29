@@ -6,7 +6,6 @@ public class Task13 {
         for (int i = 1; i <= month; i++) {
             float a = (sum * 7) / 100;
             sum += a;
-
         }
         System.out.println(sum);
     }
